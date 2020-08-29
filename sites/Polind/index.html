@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/all.css">
+        <title>polind - Home</title>
+    </head>
+    <body class="">
+    <div class="navbar">
+            <a href="index.html">
+                <img src="images/logo.png" alt="">
+                <span>
+                    polind
+                </span>
+            </a>
+            <div class="bars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="list">
+                <li class="fade-left"><a href="#guid">Guide</a></li>
+                <li class="fade-left"><a href="#journey">Journey</a></li>
+                <li class="fade-left"><a href="#hotels">Hotels</a></li>
+                <li class="fade-left"><a href="show_more.html">Travelers</a></li>
+            </ul>
+        </div>
+        <header>
+            <img src="images/background-image.jpg" alt="">
+            <div class="opacity">
+                <div class="container">
+                    <h1>
+                        Fall In Love
+                        <span>With Poland</span>
+                    </h1>
+                    <p>best way to find your perfect place in poland</p>
+                    <button>Search your place</button>
+                </div>
+            </div>
+            <div class="popular-places" id="guid">
+                <h5>popular places to discover</h5>
+                <button class="prev"><i class="fas fa-chevron-left"></i>previous</button>
+                <button class="next">next<i class="fas fa-chevron-right"></i></button>
+                <div class="places sliderContainer">
+                    <div class='place slide'>
+                        <img src='files/1st-img.jpg' alt=''>
+                        <div class='opacity'>
+                            <h2>jungle</h2>
+                            <h6>kills monesters</h6>
+                            <button>View offer</button>
+                        </div>
+                    </div>
+                    <div class='place slide'>
+                        <img src='files/2nd-img.jpg' alt=''>
+                        <div class='opacity'>
+                            <h2>top Lane</h2>
+                            <h6>big tank</h6>
+                            <button>View offer</button>
+                        </div>
+                    </div>
+                    <div class='place slide'>
+                        <img src='files/3rd-img.jpg' alt=''>
+                        <div class='opacity'>
+                            <h2>mid lane</h2>
+                            <h6>the main player</h6>
+                            <button>View offer</button>
+                        </div>
+                    </div>
+                    <div class='place slide'>
+                        <img src='files/4th-img.jpg' alt=''>
+                        <div class='opacity'>
+                            <h2>bot lane</h2>
+                            <h6>carries the game</h6>
+                            <button>View offer</button>
+                        </div>
+                    </div>
+                    <div class='place slide'>
+                        <img src='files/5th-img.jpg' alt=''>
+                        <div class='opacity'>
+                            <h2>support</h2>
+                            <h6>supports the adc</h6>
+                            <button>View offer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="where-section">
+            <div class="container">
+                <h2>Where You Want To Go?</h2>
+                <div class="search-container">
+                    <div class="search">
+                        <input type="text" onclick="something()" onkeyup="search()" name="" id="" placeholder="Search Place">
+                        <i class="fas fa-search" onclick="search()"></i>
+                    </div>
+                    <ul class="search-results">
+                        <!--the results from js-->
+                    </ul>
+                </div>
+                <div class="links">
+                    <ul class="group">
+                        <li>Journey</li>
+                        <li>Travelers</li>
+                        <li>Guide</li>
+                    </ul>
+                    <ul class="group">
+                        <li>Mazury</li>
+                        <li>Cracow</li>
+                        <li>Zakopane</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="results">
+                <div class='result'>
+                    <img src='files/kozy.jpg' alt=''>
+                    <div class='info'>
+                        <h2>kozy</h2>
+                        <h5>demons dont control us</h5>
+                        <button>View more</button>
+                    </div>
+                </div>
+                <div class='result'>
+                    <img src='files/Karpacz.jpg' alt=''>
+                    <div class='info'>
+                        <h2>Karpacz</h2>
+                        <h5>this is up</h5>
+                        <button>View more</button>
+                    </div>
+                </div>
+                <div class='result'>
+                    <img src='files/Poznan.jpg' alt=''>
+                    <div class='info'>
+                        <h2>Poznan</h2>
+                        <h5>it looks like u might be ine of us</h5>
+                        <button>View more</button>
+                    </div>
+                </div>
+                <div class='result'>
+                    <img src='files/Warsaw.jpg' alt=''>
+                    <div class='info'>
+                        <h2>Warsaw</h2>
+                        <h5>all my friends are head and sike slow</h5>
+                        <button>View more</button>
+                    </div>
+                </div>
+                <div class='result'>
+                    <img src='files/Wroclaw.jpg' alt=''>
+                    <div class='info'>
+                        <h2>Wroclaw</h2>
+                        <h5>please dont mak any sudden moves</h5>
+                        <button>View more</button>
+                    </div>
+                </div>
+                <div class='result'>
+                    <img src='files/1.jpg' alt=''>
+                    <div class='info'>
+                        <h2>demons</h2>
+                        <h5>kozy is one of the wonderful places</h5>
+                        <button>View more</button>
+                    </div>
+                </div>
+            </div>
+            <button style="margin-top: 50px;">
+                <a href="show_more.php">show more</a>
+            </button>
+        </section>
+        <section class="explore">
+            <div class="content">
+                <h1>Explore City</h1>
+                <div class="grid container">
+                    <div class="left">
+                        <h1>
+                            Elmansoura
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quasi, laudantium repudiandae, odio provident ea doloribus officia adipisci impedit suscipit dolorem ullam hic molestias. Minus consequuntur dignissimos aut quasi nemo?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eveniet adipisci autem beatae modi. Dolores obcaecati, minima autem asperiores eius laboriosam sed facilis quo aliquid quaerat a maiores, praesentium quae!</p>
+                        <button>Check offers</button>
+                    </div>
+                    <div class="right">
+                        <img src="images/about.jpg" alt="">
+                        <div class="after"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="after man">MAN</div>
+            <div class="after sou">SOU</div>
+            <div class="after ra">RA</div>
+        </section>
+        <footer>
+            <div class="container footer-container">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="">
+                    <span>
+                        polind
+                    </span>
+                </a>
+                <ul>
+                    <h3 style="color: #ffffff; margin-bottom: 20px;margin-left: -20px;">GO TO</h3>
+                    <li class="fade-left"><a href="#guid" style="color: tomato;">Guide</a></li>
+                    <li class="fade-left"><a href="#journey" style="color: tomato;">Journey</a></li>
+                    <li class="fade-left"><a href="#hotels" style="color: tomato;">Hotels</a></li>
+                    <li class="fade-left"><a href="show_more.html" style="color: tomato;">Travelers</a></li>
+                </ul>
+                <ul>
+                    <li style="margin-top: 50px;">&#xa9;All rights recived</li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="js/jqurey.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/search.js"></script>
+    </body>
+</html>

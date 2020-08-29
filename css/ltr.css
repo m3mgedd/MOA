@@ -1,0 +1,13 @@
+
+.current-section {
+    left: 0;
+    right: unset;
+}
+.input span {
+    left: 20px;
+    right: unset;
+}
+footer .grid-row .left li a {
+    padding-left: 20px;
+    padding-right: unset;
+}

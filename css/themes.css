@@ -1,0 +1,50 @@
+/*the dark*/
+body.dark .dark-child {
+    color: #ffffff;
+}
+body.dark {
+    background-color: #151515;
+    color: #ffffff;
+}
+body.dark .sticky-nav.white {
+    background-color: #151515;
+}
+body.dark .sticky-nav.white a li {
+    color: #ffffff;
+}
+body.dark .sticky-nav.white .current-section {
+    background-color: #ffffff;
+}
+
+body.dark .input span {
+    background-color: #151515;
+    padding: 0 5px;
+}
+body.dark .hr {
+    background-color: #565656;
+}
+body.dark footer {
+    background-color: #0e0e0e;
+}
+body.dark .rights {
+    background-color: #0c0c0c;
+}
+body.dark .logo {
+    color: #ffffff;
+}
+body.dark form input[type="submit"] {
+    background-color: #484848;
+}
+
+
+
+
+
+
+
+@media (orientation: portrait), (max-width: 768px) {
+    body.dark .list ul {
+        background-color: #7927c6;
+    }
+}
+

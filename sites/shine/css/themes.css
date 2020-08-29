@@ -1,0 +1,7 @@
+/*the dark*/
+body.dark .dark-child {
+    color: #ffffff;
+}
+body.dark {
+    background-color: #151515;
+}

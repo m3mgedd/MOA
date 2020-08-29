@@ -1,0 +1,32 @@
+/*the dark*/
+body.dark .dark-child {
+    color: #ffffff;
+}
+body.dark {
+    background-color: #151515;
+}
+body.dark .list ul li a {
+    color: #f9d17b;
+}
+body.dark .dark-bars .bar {
+    background-color: #f9d17b;
+}
+body.dark .dark-404 {
+    color: #363636;
+}
+
+
+
+
+
+
+@media (orientation: portrait), (max-width: 768px) {
+    body.dark .list ul {
+        background-color: #7927c6;
+    }
+}
+
+
+.opacity {
+    background-color: #1e0931ad;
+}

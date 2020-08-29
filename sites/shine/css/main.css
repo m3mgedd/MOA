@@ -1,0 +1,346 @@
+/*the main rules*/
+@font-face {
+    font-family: oldEnglish;
+    src: url(../webfonts/OldEnglishTextMT2.ttf);
+}
+* {
+    box-sizing: border-box;
+    transition: color ease 0.7s;
+    transition: background-color ease 0.7s;
+    font-family: 'Oswald', sans-serif;
+}
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    background-color: #ffffff;
+    color: #000000;
+}
+a {
+    color: unset;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: unset;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    }
+  
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+button {
+    all: unset;
+    padding: 10px 15px;
+    transition: all ease 0.3s;
+    border: 1.7px solid #000000;
+    outline: transparent;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+button:focus {
+    outline: transparent;
+}
+.squrImg {
+    object-fit: cover;
+}
+.container > * {
+    margin-top: 80px;
+}
+
+/*end of the main rules*/
+
+/*start of the navbar*/
+
+.navbar {
+    padding: 15px 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 92vw;
+    width: -webkit-fill-available;
+    z-index: 3;
+    top: 0;
+}
+.navbar:hover {
+    background-color: #ffffff;
+}
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*the list styling*/
+
+.list {
+    position: fixed;
+    right: -220px;
+    top: 0;
+    width: 220px;
+    height: 100vh;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    font-family: 'GFS Didot', serif;
+    padding-top: 50px;
+    background-color: #ffffff;
+    transition: all ease-out 0.5s;
+    z-index: 2;
+}
+.list h2 {
+    font-weight: 400;
+    margin: 25px 0;
+    font-size: 2.7rem;
+}
+.list h2 a {
+    text-decoration: none;
+}
+.list ul {
+    padding-left: 5px;
+    list-style: none;
+}
+.slip {
+    right: 0;
+}
+
+
+
+
+.logo {
+    font-size: 2.7rem;
+    font-family: 'GFS Didot', serif;
+    letter-spacing: -2px;
+}
+.list li {
+    margin: 0 10px;
+}
+.list li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.3rem;
+}
+.bars {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    transition: all ease 0.15s;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+}
+.bars .bar {
+    height: 1px;
+    width: 100%;
+    background-color: #000000;
+}
+.bars.clicked {
+    padding: 9px 0;
+}
+.bars:hover {
+    padding: 3px 0;
+}
+.cart {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin: 0 20px;
+    margin-top: -4px;
+}
+.cart svg {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+.cart div {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*end of the navbar*/
+
+/*header styling starts*/
+
+header {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+header > .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header > .opacity {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+img.center {
+    display: block;
+    margin: auto;
+}
+
+/*the slider options*/
+.btn {
+    cursor: pointer;
+}
+
+.nextbtn img {
+    transform: rotate(180deg);
+}
+
+/*the dots styling*/
+
+.dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 13px;
+    display: flex;
+    flex-direction: row;
+}
+.dots .dot {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    border: 1px solid #181818;
+    margin: 0 5px;
+    position: relative;
+}
+.dots .dot .inner-dot {
+    position: absolute;
+    transform: translate(12%, 12%);
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    background-color: #181818;
+    transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+}
+.dots .dot.active .inner-dot {
+    height: 9px;
+    width: 9px;
+}
+
+
+
+
+
+header > .slider img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all ease-in-out 0.7s;
+}
+header > .slider img.show {
+    opacity: 1;
+}
+
+
+/*heading styling ends*/
+
+/*the sections style*/
+
+section h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.posts {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.posts .post {
+    margin: 0 15px;
+    position: relative;
+}
+.posts .post img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.posts .post label {
+    font-size: 24px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.posts .post label.sale {
+    text-decoration: line-through;
+    color: #d83e3c;
+}
+.post .opacity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(#00000000, #00000047);
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    padding: 25px;
+    opacity: 0;
+    transition: opacity ease 0.3s;
+    color: #ffffff;
+    font-weight: 200;
+}
+.post .opacity:hover {
+    opacity: 1;
+}
+.post .opacity .stock {
+    text-decoration: underline;
+}
+/*the sections stle ends*/
